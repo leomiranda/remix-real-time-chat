@@ -1,5 +1,5 @@
 {
-	"name": "",
+	"name": "Remix chat",
 	"private": true,
 	"sideEffects": false,
 	"type": "module",
@@ -10,7 +10,8 @@
 		"start": "remix-serve ./build/server/index.js",
 		"typecheck": "tsc",
 		"db:push": "prisma db push",
-		"db:studio": "prisma studio"
+		"db:studio": "prisma studio",
+		"postinstall": "prisma generate"
 	},
 	"dependencies": {
 		"@prisma/client": "^5.20.0",
@@ -21,7 +22,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"remix-auth": "^3.7.0",
-		"remix-auth-socials": "^2.1.0",
+		"remix-auth-google": "^2.0.0",
 		"remix-utils": "^7.7.0",
 		"sqlite": "^5.1.1"
 	},
