@@ -1,5 +1,7 @@
 # Real-Time Chat Application
 
+![image](https://github.com/user-attachments/assets/b4a951e3-9ad9-4da2-955e-b96a621e2c19)
+
 A simple real-time chat application built with Remix, Prisma, SQLite, and TypeScript.
 
 ## Features
