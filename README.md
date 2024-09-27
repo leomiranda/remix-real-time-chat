@@ -1,6 +1,6 @@
 # Real-Time Chat Application
 
-A modern, real-time chat application built with Remix, Prisma, SQLite, and TypeScript.
+A simple real-time chat application built with Remix, Prisma, SQLite, and TypeScript.
 
 ## Features
 
