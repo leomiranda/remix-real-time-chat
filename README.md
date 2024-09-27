@@ -39,7 +39,18 @@ A modern, real-time chat application built with Remix, Prisma, SQLite, and TypeS
    npm install
    ```
 
-3. Set up the database:
+3. Set up environment variables:
+   Create a `.env` file in the root directory based on the `.env.example` file and fill in your values:
+
+   ```
+   DATABASE_URL="file:./dev.db"
+   SESSION_SECRET="your-secret-key"
+   GOOGLE_CLIENT_ID="your-google-client-id"
+   GOOGLE_SECRET_KEY="your-google-secret-key"
+   GOOGLE_CALLBACK_URL="http://localhost:5174/auth/google/callback"
+   ```
+
+4. Set up the database:
    ```sh
    npx prisma migrate dev
    ```
@@ -75,6 +86,18 @@ npm start
 - `app/services/emitter.server.ts`: Server-Sent Events handler
 - `app/db.server.ts`: Database connection and Prisma client
 - `prisma/schema.prisma`: Prisma schema for database models
+
+## Environment Variables
+
+The application uses the following environment variables:
+
+- `DATABASE_URL`: The URL for the SQLite database
+- `SESSION_SECRET`: A secret key for session management
+- `GOOGLE_CLIENT_ID`: Your Google OAuth client ID
+- `GOOGLE_SECRET_KEY`: Your Google OAuth secret key
+- `GOOGLE_CALLBACK_URL`: The callback URL for Google OAuth
+
+Make sure to set these in your `.env` file before running the application.
 
 ## Real-Time Messaging with SSE
 
